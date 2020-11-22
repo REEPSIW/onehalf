@@ -25,7 +25,7 @@ let s:blue        = { "gui": "#61afef", "cterm": "75"  }
 let s:purple      = { "gui": "#c678dd", "cterm": "176" }
 let s:cyan        = { "gui": "#56b6c2", "cterm": "73"  }
 let s:white       = { "gui": "#dcdfe4", "cterm": "188" }
-
+let s:orange      = { "gui": "#e68c19", "cterm": "100" }
 let s:fg          = s:white
 let s:bg          = s:black
 
@@ -117,15 +117,14 @@ call s:h("Title", s:green, "", "")
 call s:h("WildMenu", s:fg, "", "")
 " }
 
-
 " Syntax colors {
 " Whitespace is defined in Neovim, not Vim.
 " See :help hl-Whitespace and :help hl-SpecialKey
 call s:h("Whitespace", s:non_text, "", "")
 call s:h("NonText", s:non_text, "", "")
-call s:h("Comment", s:comment_fg, "", "")
+call s:h("Comment", s:green, "", "")
 call s:h("Constant", s:cyan, "", "")
-call s:h("String", s:green, "", "")
+call s:h("String", s:orange, "", "")
 call s:h("Character", s:green, "", "")
 call s:h("Number", s:yellow, "", "")
 call s:h("Boolean", s:yellow, "", "")
